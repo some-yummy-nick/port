@@ -1,10 +1,9 @@
 {
-  "name": "nerds",
+  "name": "portfolio",
   "authors": [
     "Marat"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/yeffasol/new",
+  "homepage": "https://github.com/yeffasol/port",
   "private": true,
   "ignore": [
     "**/.*",
