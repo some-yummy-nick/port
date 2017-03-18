@@ -1,8 +1,9 @@
+@import "../../../node_modules/fontawesome-scss/fontAwesome";
+
 .footer {
   display: flex;
   justify-content: center;
   background-color: #262626;
-
 }
 
 .social {
@@ -24,28 +25,49 @@
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    background-color: #9c9c9c;
+    background-color: #fff;
+    &:hover {
+      background-color: $accentColor;
+    }
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
     span {
       display: none;
     }
-    i{
+    i {
       position: absolute;
       left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
       color: $textColor;
     }
 
-      &--vk{
-        &:hover {
-          background-color: $accentColor;
-        }
-
+    &--vk {
+      &::after {
+        @include fa($fa-vk, $accentColor, 18px);
       }
-      &--github{
-        &:hover {
-          background-color: $accentColor;
+      &:hover {
+        &::after {
+          @include fa($fa-vk, #fff, 18px);
+        }
+      }
+
+    }
+    &--github {
+      &::after {
+        @include fa($fa-github, $accentColor, 18px);
+      }
+      &:hover {
+        &::after {
+          @include fa($fa-github, #fff, 18px);
         }
       }
     }
   }
+}
