@@ -5,7 +5,6 @@ export default function myModule() {
   var pageNumber = 0;
   var PAGE_SIZE = 6;
 
-
   function createHTML(petsData) {
     var from = pageNumber * PAGE_SIZE;
     var to = from + PAGE_SIZE;
