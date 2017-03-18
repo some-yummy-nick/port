@@ -1,0 +1,21 @@
+<div class="portfolio" id="portfolio">
+  <h2 class="title">Портфолио</h2>
+  <div class="portfolio__items"></div>
+  <a class="portfolio__link" href="https://github.com/yeffasol?tab=repositories" target="_blank">Больше проектов...</a>
+</div>
+<script id="portfolio__template" type="text/x-handlebars-template">
+  {{#each projects}}
+  <div class="portfolio__item-wrapper">
+    <div class="portfolio__item">
+      <img src="images/{{name}}.jpg" alt="portfolio__item"/>
+      <div class="portfolio__hover">
+        <h3>{{name}}</h3>
+        <p>Туристический город</p>
+        <a class="portfolio__link" href="https://github.com/yeffasol/{{name}}" target="_blank">Проект на Github</a>
+        <a class="portfolio__link"
+           href="http://yeffasol.github.io/{{name}}/" target="_blank">Посмотреть онлайн</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</script>

@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #262626;
+
+}
+
+.social {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    @include inlineBlock();
+    @include marginRight(10px);
+  }
+  &__link {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #9c9c9c;
+    span {
+      display: none;
+    }
+    i{
+      position: absolute;
+      left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      color: $textColor;
+    }
+
+      &--vk{
+        &:hover {
+          background-color: $accentColor;
+        }
+
+      }
+      &--github{
+        &:hover {
+          background-color: $accentColor;
+        }
+      }
+    }
+  }

@@ -1,0 +1,137 @@
+.certificate {
+  padding-top: 100px;
+  &__list {
+   @include noList;
+  }
+  &__item {
+    margin-bottom: 20px;
+
+  }
+  &__block {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    padding-right: 70px;
+    margin-right: auto;
+    background-color: #fff;
+    margin-left: auto;
+    box-shadow: 0 1px 3px rgba(black,0.8);
+    &:hover {
+      background-color: $accentColor;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  &__link {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid transparent;
+    &:hover{
+      transform: translateY(-50%) scale(1.2);
+    }
+    &--academy{
+      right: 7px;
+      top: 45%;
+    }
+  }
+  span {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  &__date {
+    color: #fff;
+    display: none;
+  }
+  @media ($tablet-widths) {
+    &__block {
+      width: 356px;
+      &:hover{
+        .certificate__date{
+          &::after{
+            border: 5px solid #94e0f2;
+          }
+        }
+      }
+    }
+
+    &__item {
+      position: relative;
+      width: 480px;
+      margin-right: auto;
+      margin-left: auto;
+      &::after, &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 2px;
+        background-color: #ddd;
+        left: 20px;
+
+        top: 0;
+      }
+      &::before {
+        top: 50%;
+        bottom: 0;
+        margin-top: 20px;
+        margin-bottom: -10px;
+
+      }
+      &::after {
+        top: 0;
+        bottom: 50%;
+        margin-bottom: 20px;
+        margin-top: -10px;
+      }
+      &:first-child {
+        &::after{
+          display: none;
+        }
+      }
+      &:last-child {
+        &::before{
+          display: none;
+        }
+      }
+    }
+
+    &__date {
+      position: absolute;
+      display: block;
+      top: 50%;
+      right: 100%;
+      width: 100px;
+      margin-right: 60px;
+      text-align: right;
+      transform: translateY(-50%);
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: $accentColor;
+        border: 5px solid transparent;
+        border-radius: 100%;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+    }
+  }
+  @media($desktop-widths) {
+        &__block{
+          width: 380px;
+        }
+    &__item{
+      &::after, &::before {
+        left: 10px;
+      }
+    }
+     }
+}

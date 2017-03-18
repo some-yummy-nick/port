@@ -9,10 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
   <script>WebFont.load({
     google: {
-      families: ["PT Sans:400,700"],
-      custom: {
-        families: ['Oswald']
-      }
+      families: ["Fira Sans:300,400,500,700","Open Sans:600","Raleway:300,900"]
     }
   });</script>
   <noscript><span class="noscript">У Вас отключён JavaScript...Пожалуйста включите в его в настройках</span>
@@ -26,8 +23,9 @@
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen, projection, print">
-  <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
 </head>
 <body>
@@ -37,7 +35,10 @@
     <!--HEADER-->
     @@include('../blocks/header.html')
     <!--HEADER END-->
-  </div>
+    @@include('../blocks/about.html')
+    @@include('../blocks/certificate.html')
+    @@include('../blocks/portfolio.html')
+    </div>
   <!--FOOTER-->
   @@include('../blocks/footer.html')
   <!--FOOTER END-->
@@ -46,6 +47,8 @@
 <!-- bower:js -->
 <!-- endbower -->
 <!-- endbuild -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+<script src="libraries/moveTo.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

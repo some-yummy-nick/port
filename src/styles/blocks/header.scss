@@ -1,3 +1,52 @@
-.header{
+.header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: #1a1a1a;
+  min-height: 120px;
+  padding-top: 20px;
+  transition: all 0.2s linear;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__block {
+    &--left {
+      width: 240px;
+      p{
+        color: white;
+      }
+    }
+  }
+  &--scroll{
+    min-height: 80px;
+    padding-top: 10px;
 
+  }
+  @media($tablet-widths) {
+    min-height: 100px;
+    &--scroll{
+      min-height: 80px;
+    }
+    & .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__block {
+      &--left {
+      }
+    }
+  }
+}
+
+.logo {
+  float: left;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
 }

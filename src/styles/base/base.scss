@@ -7,13 +7,16 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 html,
 body {
   height: 100%;
 }
-html{
-  // set background color for overscroll
+
+html {
+  background-color: #1a1a1a;
 }
+
 body {
   min-height: 100vh;
   position: relative;
@@ -24,37 +27,70 @@ body {
   font-weight: 400;
   line-height: 1.42;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-weight: normal;
 }
-img{
+
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.wrapper{
+
+.wrapper {
   display: table;
   height: 100%;
   width: 100%;
 }
-.content{
+
+.content {
   display: table-row;
   height: 100%;
 }
-.noscript{
+
+.noscript {
   display: block;
   text-align: center;
   position: fixed;
   opacity: 0.7;
-  top: 0 ;
+  top: 0;
   left: 50%;
   width: 300px;
   margin-left: -150px;
   color: #0000AA;
   background: #ff7b93;
 }
-.container{
+
+.container {
   @include container;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.title {
+  color: #fff;
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+@media($desktop-widths) {
+  .sidebar {
+    float: left;
+    width: 220px;
+  }
+  .inner-content {
+    float: right;
+    width: 700px;
+  }
 }
