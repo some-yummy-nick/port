@@ -1,3 +1,4 @@
+const MoveTo = require('moveto');
 export default function targetScroll() {
   const moveTo = new MoveTo();
   const trigger = document.querySelectorAll('.menu__link');

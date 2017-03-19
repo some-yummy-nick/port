@@ -1,3 +1,4 @@
+const Handlebars = require('handlebars');
 export default function myModule() {
   var rawTemplate = document.getElementById("portfolio__template").innerHTML;
   var projectsContainer = document.querySelector(".portfolio__items");
