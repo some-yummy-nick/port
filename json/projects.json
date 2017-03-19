@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "name": "library"
+    },
+    {
+      "name": "technomart"
+    },
+    {
       "name": "barbershop"
     },
     {
