@@ -1,34 +1,52 @@
 {
   "projects": [
     {
-      "name": "cuda"
+      "name": "skokov",
+      "goal": "Корпоративный сайт"
     },
     {
-      "name": "library"
+      "name": "cuda",
+      "goal": "Лендинг"
     },
     {
-      "name": "technomart"
+      "name": "library",
+      "goal": "Сайт издательсва"
     },
     {
-      "name": "barbershop"
+      "name": "oneluke",
+      "goal": "Лендинг"
     },
     {
-      "name": "sedona"
+      "name": "technomart",
+      "goal": "Интернет-магазин"
     },
     {
-      "name": "pink"
+      "name": "barbershop",
+      "goal": "Сайт-визитка"
     },
     {
-      "name": "mishka"
+      "name": "sedona",
+      "goal": "Туристический город"
     },
     {
-      "name": "fitnesstime"
+      "name": "pink",
+      "goal": "Учебный проект"
     },
     {
-      "name": "lambda"
+      "name": "mishka",
+      "goal": "Интернет-магазин"
     },
     {
-      "name": "nerds"
+      "name": "fitnesstime",
+      "goal": "Интернет-магазин"
+    },
+    {
+      "name": "lambda",
+      "goal": "Интернет-магазин"
+    },
+    {
+      "name": "nerds",
+      "goal": "Интернет-магазин"
     }
   ]
 }
